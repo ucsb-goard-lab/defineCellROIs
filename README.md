@@ -98,6 +98,11 @@ Once you are happy with your ROIs, click on ``save cells`` to save your refined 
 ROI data will be saved on their original *.mat* files. If there are existing ROIs in these files, they will be overwritten.
 You can save your work, close this app, and come back later to continue working on your ROIs as many times as you would like. Just make sure to load your existing ROIs after clicking on ``detect cells``.
 
+# Paths
+The current version of this app is designed to work with the example experiment data. You can, however, adapt it for your own data, just make sure to update the corresponding path in ``defineCellROIs.mlapp``:
+
+``line 89: app.rootDir = [pwd,'\exampleExperiment\'];``
+
 # Example Experiment
 ## Data strcuture
 Each file corresponds to a 15 min block --> 2 blocks per session (day) --> 5 sessions per experiment.
