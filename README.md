@@ -14,7 +14,7 @@ On the Command Window, in Matlab type:
 Example: 
 ``defineCellROIs('sLMF009',180911:180915,1:2)``
 
-Make sure the App file (defineCellROIs.mlapp) and the 2 Matlab functions (detectCells.m, registerSessions.m) in this repository are in the same folder as the 'exampleExperiment' folder.
+Make sure the app file (***defineCellROIs.mlapp***) and the two other Matlab functions (***detectCells.m***, ***registerSessions.m***) in this repository are in the same folder as the ***exampleExperiment*** folder.
 
 <p align="center">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/4f4e3973ee30459977e391201a5c09af57ed19ea/screenShots/exampleRegisteredProjection.png?format=1000w" height="400">
@@ -55,10 +55,10 @@ You can quickly jump between the 2 options by clicking on the ``reset`` button a
 ***"This is the fun part of this app"***
 
 Click on ``refine ROIs`` to either delete or add ROIs at will.
-1. The program will automatically detect whether you draw an ROI completely enclosing an existing ROI. In which case, it will ***delete*** the existing ROI.
-2. The program will also automatically detect that you draw an ROI in an area where there isn't any ROIs. In which case, it will ***add*** a new ROI.
+1. The app will automatically detect whether you draw an ROI completely enclosing an existing ROI. In which case, it will ***delete*** the existing ROI.
+2. The app will also automatically detect that you draw an ROI in an area where there isn't any ROIs. In which case, it will ***add*** a new ROI.
 
-***Important: if a new ROI is drawn partially over another ROI, then the program will keep both.
+***Important: if a new ROI is drawn partially over another ROI, then the app will keep both.
 This is not ideal and must be avoided, so please be careful.***
 
 ### Adding a new ROI
@@ -84,9 +84,9 @@ This is not ideal and must be avoided, so please be careful.***
 
 The ``Zoom in`` and ``Zoom out`` will help you navigate the ROI map, and draw better ROIs with higher pression while zooming in.
 
-***Warning: be careful while using Matlab's toolbar menu, it could interfere with this program's ``zoom in`` and ``zoom out`` functions.
+***Warning: be careful while using Matlab's toolbar menu, it could interfere with this app's ``zoom in`` and ``zoom out`` functions.
 From R2018b onwards, Matlab's toolbar menu appears when you hover over the top right part of your figure.
-The most common error is that both Matlab's ``Restore View`` and this program's ``Zoom out`` stop working.***
+The most common error is that both Matlab's ``Restore View`` and this app's ``Zoom out`` stop working.***
 
 <p align="center">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/zoomingIn1.png?format=1000w" height="400">
