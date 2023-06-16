@@ -58,7 +58,7 @@ Click on ``refine ROIs`` to either delete or add ROIs at will.
 1. The app will automatically detect that you draw an ROI completely enclosing an existing ROI. In which case, it will ***delete*** the existing ROI.
 2. The app will also automatically detect that you draw an ROI in an area where there isn't any ROIs. In which case, it will ***add*** a new ROI.
 
-***Important: if a new ROI is drawn partially over another ROI, then the app will keep both.
+***Important: if a new ROI is partially drawn over another ROI, then the app will keep both.
 This is not ideal and must be avoided, so please be careful.***
 
 ### Adding a new ROI
