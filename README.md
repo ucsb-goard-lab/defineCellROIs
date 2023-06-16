@@ -65,7 +65,7 @@ This is not ideal and must be avoided, so please be careful.***
 <p align="center">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/definingNewROI.png?format=1000w" height="200">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/newROIcreated.png?format=1000w" height="200">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/4b5554b1d94770591ebdd03fcb481194a1aa64f4/screenShots/refineCellROI.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/4b5554b1d94770591ebdd03fcb481194a1aa64f4/screenShots/refineCellROI.png?format=1000w" height="200">
 </p>
 
 ### Removing an existing ROI
@@ -107,13 +107,5 @@ To visualize which fields are contained in each *.mat* file, here is an example 
      averageProjection: [750×750 double]
            activityMap: [750×750 double]
               cellROIs: {317×1 cell}
-               cellDFF: [317×9050 double]
-         cellResponses: [317×90×96 double]
-           mazeContext: [96×1 double]
-             decisions: [96×1 double]
-         freeDecisions: [96×1 double]
-         correctTrials: [96×1 double]
-    decisionTrajectory: [119×96 double]
-        trajectoryTime: [96×1 double]
       
       
