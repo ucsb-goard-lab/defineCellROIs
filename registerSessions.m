@@ -15,8 +15,8 @@ function [registeredProjections,registeredActivityMaps,rowShiftVector,columnShif
     B = [];
     for k=dates
         for j=blocks
-            if exist([rootDir,'\exampleExperiment\',mouseName,'_',num2str(k),'_',num2str(j),'.mat'],'file') > 0
-                load([rootDir,'\exampleExperiment\',mouseName,'_',num2str(k),'_',num2str(j),'.mat'])
+            if exist([rootDir,mouseName,'_',num2str(k),'_',num2str(j),'.mat'],'file') > 0
+                load([rootDir,mouseName,'_',num2str(k),'_',num2str(j),'.mat'])
                 averageProjections = cat(3,averageProjections,mouseData.averageProjection);
                 activityMaps = cat(3,activityMaps,mouseData.activityMap);
                 n = n + 1;
