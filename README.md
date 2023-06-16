@@ -99,7 +99,7 @@ ROI data will be saved on their original *.mat* files. If there are existing ROI
 You can save your work, close this app, and come back later to continue working on your ROIs as many times as you would like. Just make sure to load your existing ROIs after clicking on ``detect cells``.
 
 # Paths
-The current version of this app is designed to work with the example experiment data. You can, however, adapt it for your own data, just make sure to update the corresponding path in ``defineCellROIs.mlapp``:
+The current version of this app is designed to work with the example experiment data. You can, however, adapt it for your own data, just make sure to update the corresponding path in ***defineCellROIs.mlapp***:
 
 ``line 89: app.rootDir = [pwd,'\exampleExperiment\'];``
 
