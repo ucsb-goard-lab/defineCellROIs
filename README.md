@@ -65,7 +65,7 @@ This is not ideal and must be avoided, so please be careful.***
 <p align="center">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/definingNewROI.png?format=1000w" height="200">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/newROIcreated.png?format=1000w" height="200">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/refineCellROI.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/4b5554b1d94770591ebdd03fcb481194a1aa64f4/screenShots/refineCellROI.png?format=1000w" height="200">
 </p>
 
 ### Removing an existing ROI
@@ -90,7 +90,7 @@ The most common error is that both Matlab's ``Restore View`` and this program's 
 
 <p align="center">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/zoomingIn1.png?format=1000w" height="400">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/bfc0ee3b149f5bb592735c867c9dc8542388141f/screenShots/zoomingIn2.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/4b5554b1d94770591ebdd03fcb481194a1aa64f4/screenShots/zoomingIn2.png?format=1000w" height="400">
 </p>
 
 ## Save cells
