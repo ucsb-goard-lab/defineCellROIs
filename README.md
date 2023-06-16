@@ -45,7 +45,7 @@ Please try both options:
 1. *Yes* --> load refined ROIs.
 2. *No* --> detect ROIs from scratch. 
 
-You can quickly jump between the 2 options by pressing ``reset`` at the bottom left of the GUI.
+You can quickly jump between the 2 options by clicking on the ``reset`` button at the bottom left of the GUI.
 
 <p align="center">
 <img src="https://github.com/luismfranco/defineCellROIs/blob/4f4e3973ee30459977e391201a5c09af57ed19ea/screenShots/exampleROIs.png?format=1000w" height="500">
@@ -95,6 +95,7 @@ The most common error is that both Matlab's ``Restore View`` and this program's 
 ## Save cells
 Once you are happy with your ROIs, click on ``save cells`` to save your refined ROIs.
 ROI data will be saved on their original *.mat* files. If there are existing ROIs in these files, they will be overwritten.
+You can save your work, close this app, and come back later to continue working on your ROIs as many times as you would like. Just make sure to load your existing ROIs after clicking on ``detect cells``.
 
 # Example Experiment
 ## Data strcuture
