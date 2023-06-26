@@ -17,8 +17,8 @@ Example:
 Make sure the app file (***defineCellROIs.mlapp***) and the two other Matlab functions (***detectCells.m***, ***registerSessions.m***) in this repository are in the same folder as the ***exampleExperiment*** folder.
 
 <p align="center">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/exampleRegisteredProjection.png?format=1000w" height="400">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/GUIimage.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleRegisteredProjection.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/GUIimage.png?format=1000w" height="400">
 </p>
 
 ## Image
@@ -48,7 +48,7 @@ Please try both options:
 You can quickly jump between the 2 options by clicking on the ``reset`` button at the bottom left of the GUI.
 
 <p align="center">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/exampleROIs.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleROIs.png?format=1000w" height="400">
 </p>
 
 ## Refine Cell ROIs
@@ -63,21 +63,21 @@ This is not ideal and must be avoided, so please be careful.***
 
 ### Adding a new ROI
 <p align="center">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/definingNewROI.png?format=1000w" height="200">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/newROIcreated.png?format=1000w" height="200">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/refineCellROI.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/definingNewROI.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/newROIcreated.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refineCellROI.png?format=1000w" height="200">
 </p>
 
 ### Removing an existing ROI
 <p align="center">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/removingROI.png?format=1000w" height="200">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/ROIremoved.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/removingROI.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/ROIremoved.png?format=1000w" height="200">
 </p>
 
 ### Refining new ROIs after removing an existing one.
 <p align="center">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/refinedROI1.png?format=1000w" height="200">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/refinedROI2.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refinedROI1.png?format=1000w" height="200">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refinedROI2.png?format=1000w" height="200">
 </p>
 
 ## Zoom in and Zoom out
@@ -89,8 +89,8 @@ From R2018b onwards, Matlab's toolbar menu appears when you hover over the top r
 The most common error is that both Matlab's ``Restore View`` and this app's ``Zoom out`` stop working.***
 
 <p align="center">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/zoomingIn1.png?format=1000w" height="400">
-<img src="https://github.com/luismfranco/defineCellROIs/blob/6d6705e414a70324ed548f7a2fb5eafc09c5f90e/screenShots/zoomingIn2.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/zoomingIn1.png?format=1000w" height="400">
+<img src="https://github.com/luismfranco/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/zoomingIn2.png?format=1000w" height="400">
 </p>
 
 ## Save cells
