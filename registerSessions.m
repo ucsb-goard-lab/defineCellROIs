@@ -1,4 +1,4 @@
-function [registeredProjections,registeredActivityMaps,rowShiftVector,columnShiftVector,D,B] = registerSessions(mouseName,dates,blocks,rootDir)
+function [referenceProjections,referenceProjectionIDs,registeredProjections,registeredActivityMaps,rowShiftVector,columnShiftVector,D,B] = registerSessions(mouseName,dates,blocks,rootDir)
 %% Settings 
 
     % Registration across sessions
@@ -8,6 +8,8 @@ function [registeredProjections,registeredActivityMaps,rowShiftVector,columnShif
 
 %% Registration across imaging sessions
     
+    referenceProjections = [];
+    referenceProjectionIDs = [];
     averageProjections = [];
     activityMaps = [];
     n = 0;
@@ -22,6 +24,10 @@ function [registeredProjections,registeredActivityMaps,rowShiftVector,columnShif
                 n = n + 1;
                 if strcmp([mouseName,'_',num2str(k),'_',num2str(j)],reference)
                     idx = n;
+                end
+                if j==1
+                    referenceProjections = cat(3,referenceProjections,mouseData.averageProjection);
+                    referenceProjectionIDs = cat(2,referenceProjectionIDs,n);
                 end
                 % Dates and blocks
                 D = cat(1,D,k);
