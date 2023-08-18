@@ -1,10 +1,12 @@
 # defineCellROIs
 GUI for automated detection of cell ROIs from calcium imaging data (with manual refinement)
 
-Example two-photon calcium imaging data can be downloaded from here: https://www.mediafire.com/folder/dtoudmlkj7y43/exampleExperiment
+This GUI was developed to analyze two-photon calcium imaging data sampled from the same field of view across experimental sessions.
+The GUI also includes code for calculating the stability of ROIs across experimental sessions.
 
-This code was developed to analyze two-photon calcium imaging data sampled from the same field of view across experimental sessions.
 If you find this code helpful, please cite this publication: https://www.biorxiv.org/content/10.1101/2022.10.19.512933v1
+
+Example two-photon calcium imaging data can be downloaded from here: https://www.mediafire.com/folder/dtoudmlkj7y43/exampleExperiment
 
 # How to use
 
@@ -14,14 +16,14 @@ On the Command Window, in Matlab type:
 Example: 
 ``defineCellROIs('sLMF009',180911:180915,1:2)``
 
-Make sure the app file (***defineCellROIs.mlapp***) and the two other Matlab functions (***detectCells.m***, ***registerSessions.m***) in this repository are in the same folder as the ***exampleExperiment*** folder.
+Make sure the app file (***defineCellROIs.mlapp***), the three other accompanying Matlab functions (***registerSessions.m***, ***detectCells.m***, ***calculateROIStability.m***), and the ***exampleExperiment*** folder are all in the same folder.
 
 <p align="center">
 <img src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleRegisteredProjection.png?format=1000w" height="400">
 <img src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/GUIimage.png?format=1000w" height="400">
 </p>
 
-## Image
+## Field of View
 The 3 sliders at the top control the color intensity displayed on the window for each data type:
 1. activity --> pixel-wise kurtosis of fluorescence data.
 2. projection --> registered average projection across all blocks and all sessions.
@@ -93,15 +95,27 @@ The most common error is that both Matlab's ``Restore View`` and this app's ``Zo
 <img src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/zoomingIn2.png?format=1000w" height="400">
 </p>
 
-## Save cells
-Once you are happy with your ROIs, click on ``save cells`` to save your refined ROIs.
+## Save Cell Data
+Once you are happy with your ROIs, click on ``save`` to save your refined ROIs.
 ROI data will be saved on their original *.mat* files. If there are existing ROIs in these files, they will be overwritten.
 You can save your work, close this app, and come back later to continue working on your ROIs as many times as you would like. Just make sure to load your existing ROIs after clicking on ``detect cells``.
+
+## ROI Stability
+If you want to know how stable your ROIs are across experimental sessions, you can do that by clicking on ``calculate``.
+This function will calculate the structural similarity index and the 2-D correlation coefficient for each ROI, using the first experimental session as reference, and comparing it to its ROI in all other experimental sessions. It will also generate a random distribution for each metric by comparing the original ROI in the first experimental session to a random ROI in the other experimental sessions within the same field of view. 
+
+Once it's done, data are automatically saved in ***cellROIData.m***:
+1. cellROIError --> ROIs x other experimental sessions x similarity metrics.
+2. cellROIRandomizedError --> ROIs x random distribution x other experimental sessions x similarity metrics.
+
+With these data you can later choose any desirable confidence level to label an ROI as 'stable'. For instance, ROIs whose true structural similarity index is higher than the 95 percentile of its random distrubition can be consider stable for a specific session to session comparison.
+
+***Warning: this process takes approximately 3 s for each ROI comparison to another experimental session. For instance, if you have 300 ROIs imaged across 5 experimental sessions, this code will take 3s x 300 x 4 sessions = 60 min. Thus, we strongly recommend that you save your ROIs before calculating their stability.***
 
 # Paths
 The current version of this app is designed to work with the example experiment data. You can, however, adapt it for your own data, just make sure to update the corresponding path in ***defineCellROIs.mlapp***:
 
-``line 89: app.rootDir = [pwd,'\exampleExperiment\'];``
+``line 98: app.rootDir = [pwd,'\exampleExperiment\'];``
 
 # Example Experiment
 ## Data strcuture
