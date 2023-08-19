@@ -1,5 +1,5 @@
 # defineCellROIs
-GUI for automated detection of cell ROIs from calcium imaging data (with manual refinement)
+GUI for automated detection of cell ROIs from calcium imaging data (with manual refinement).
 
 This GUI was developed to analyze two-photon calcium imaging data sampled from the same field of view across experimental sessions.
 The GUI also includes code for calculating the stability of ROIs across experimental sessions.
@@ -15,18 +15,19 @@ Example two-photon calcium imaging data can be downloaded from here: https://www
 <img align="right" width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/GUIimage.png">
 <img align="right" width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleRegisteredProjection.png">
 
-On the Command Window, in Matlab type:
+On the Command Window, in Matlab, type:
 ``defineCellROIs(mouseName,dates,blocks)``
 
 Example: 
 ``defineCellROIs('sLMF009',180911:180915,1:2)``
 
-Make sure the app file (***defineCellROIs.mlapp***), the three other accompanying Matlab functions (***registerSessions.m***, ***detectCells.m***, ***calculateROIStability.m***), and the ***exampleExperiment*** folder are all in the same folder.
+Just make sure:
+1. the app file: ***defineCellROIs.mlapp***
+2. the accompanying Matlab functions: ***registerSessions.m***, ***detectCells.m***, ***calculateROIStability.m***
+3. and the ***exampleExperiment*** folder containing the sample calcium imaging data
 
-<br />
-<br />
-<br />
-<br />
+are all in the same folder.
+
 <br />
 <br />
 <br />
@@ -160,11 +161,19 @@ This function will calculate the structural similarity index and the 2-D correla
 <img width="400" height="170" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/calculateROIStabilityWarning.png">
 </p>
 
+<br />
+
 Once it's done, data are automatically saved in ***cellROIData.m***:
 1. cellROIError --> ROIs x other experimental sessions x similarity metrics.
 2. cellROIRandomizedError --> ROIs x random distribution x other experimental sessions x similarity metrics.
 
-With these data you can later choose any desirable confidence level to label an ROI as 'stable'. For instance, ROIs whose true structural similarity index is higher than the 95 percentile of its random distrubition can be consider stable for a specific session to session comparison.
+With these data you can later choose any desirable confidence level to label an ROI as *stable*. For instance, ROIs whose true structural similarity index is higher than the 95 percentile of its random distrubition can be consider stable for a specific session-to-session comparison. This is, in fact, the criteria used by this app to display the number of stable ROIs across sessions:
+
+<p align="center">
+<img width="400" height="210" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/c62eefd47c15b784f9ffec9bb91ad03be4369bc8/screenShots/ROIStabilityFinishedMessage.png">
+</p>
+
+You are, of course, free to choose a different metric or threshold to label ROIs with enough session-to-session stability using the data saved in ***cellROIData.m***.
 
 <br />
 
