@@ -12,9 +12,6 @@ Example two-photon calcium imaging data can be downloaded from here: https://www
 
 # How to use
 
-<img align="right" width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/GUIimage.png">
-<img align="right" width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleRegisteredProjection.png">
-
 On the Command Window, in Matlab, type:
 ``defineCellROIs(mouseName,dates,blocks)``
 
@@ -28,8 +25,11 @@ Just make sure:
 
 are all in the same folder.
 
-<br />
-<br />
+<p align="center">
+<img width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleRegisteredProjection.png">
+<img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/GUIimage.png">
+</p>
+
 <br />
 
 ## Field of View
@@ -41,8 +41,6 @@ The 3 sliders at the top control the color intensity displayed on the window for
 <br />
     
 ## Automated Cell Detection 
-
-<img align="right" width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleROIs.png">
 
 Adjust parameters for automated cell detection. For details, please read: ***detectCells.m***.
 
@@ -63,11 +61,14 @@ Please try both options:
 
 You can quickly jump between the 2 options by clicking on the ``reset`` button at the bottom left of the GUI.
 
+<p align="center">
+<img width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleROIs.png">
+<img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/GUIimage.png">
+</p>
+
 <br />
 
 ## Refine Cell ROIs
-
-<img align="right" width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/refineCellROI.png">
 
 ***"This is the fun part of this app"***
 
@@ -78,54 +79,34 @@ Click on ``refine ROIs`` to either delete or add ROIs at will.
 ***Important: if a new ROI is partially drawn over another ROI, then the app will keep both.
 This is not ideal and must be avoided, so please be careful.***
 
+<p align="center">
+<img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/refineCellROI.png">
+</p>
+
 ### Adding a new ROI
 
-<img align="left" width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/definingNewROI.png">
-<img align="left" width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/newROIcreated.png">
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<p align="center">
+<img width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/definingNewROI.png">
+<img width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/newROIcreated.png">
+</p>
 
 ### Removing an existing ROI
 
-<img align="left" width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/removingROI.png">
-<img align="left" width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/ROIremoved.png">
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<p align="center">
+<img awidth="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/removingROI.png">
+<img width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/ROIremoved.png">
+</p>
 
 ### Refining new ROIs after removing an existing one
 
-<img align="left" width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refinedROI1.png">
-<img align="left" width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refinedROI2.png">
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<p align="center">
+<img width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refinedROI1.png">
+<img width="200" height="200" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/refinedROI2.png">
+</p>
 
 <br />
 
 ## Zoom in and Zoom out
-
-<img align="right" width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/zoomingIn2.png">
-<img align="right" width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/zoomingIn1.png">
 
 The ``Zoom in`` and ``Zoom out`` will help you navigate the ROI map, and draw better ROIs with higher pression while zooming in.
 
@@ -133,11 +114,10 @@ The ``Zoom in`` and ``Zoom out`` will help you navigate the ROI map, and draw be
 From R2018b onwards, Matlab's toolbar menu appears when you hover over the top right part of your figure.
 The most common error is that both Matlab's ``Restore View`` and this app's ``Zoom out`` stop working.***
 
-<br />
-<br />
-<br />
-<br />
-<br />
+<p align="center">
+<img width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/zoomingIn1.png">
+<img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/zoomingIn2.png">
+</p>
 
 <br />
 
@@ -150,12 +130,14 @@ You can save your work, close this app, and come back later to continue working 
 
 ## ROI Stability
 
-<img align="right" width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/calculateROIStability.png">
-
 If you want to know how stable your ROIs are across experimental sessions, you can do that by clicking on ``calculate``.
 This function will calculate the structural similarity index and the 2-D correlation coefficient for each ROI, using the first experimental session as reference, and comparing it to its ROI in all other experimental sessions. It will also generate a random distribution for each metric by comparing the original ROI in the first experimental session to a random ROI in the other experimental sessions within the same field of view. 
 
-***Warning: this process takes approximately 3 s for each ROI comparison to another experimental session. For instance, if you have 300 ROIs imaged across 5 experimental sessions, this code will take 3s x 300 x 4 sessions = 60 min. Thus, we strongly recommend that you save your ROIs before calculating their stability.***
+<p align="center">
+<img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/calculateROIStability.png">
+</p>
+
+***Warning: this process takes approximately 3 s for each ROI comparison between two experimental sessions. For instance, if you have 300 ROIs imaged across 5 experimental sessions, this code will take 3 s x 300 x 4 sessions = 60 min (considering the first session as reference). Thus, we strongly recommend that you save your ROIs before calculating their stability.***
 
 <p align="center">
 <img width="400" height="170" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/calculateROIStabilityWarning.png">
