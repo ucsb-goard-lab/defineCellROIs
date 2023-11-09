@@ -8,6 +8,8 @@ If you find this code helpful, please cite this publication: https://www.biorxiv
 
 Example two-photon calcium imaging data can be downloaded from here: https://www.mediafire.com/folder/dtoudmlkj7y43/exampleExperiment
 
+***Important: this app requires Matlab's Image Processing Toolbox.***
+
 <br />
 
 # How to use
@@ -29,6 +31,8 @@ are all in the same folder.
 <img width="400" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/87930b312e99a27c96d4142e951496c790b7f078/screenShots/exampleRegisteredProjection.png">
 <img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/GUIimage.png">
 </p>
+
+***Warning: closing the field of view window by clicking on the 'x' at the top right corner results in a number of errors on Matlab's Command Window. This happens because several functions in this app require that field of view window to work properly. The app might still retain limited functionality. For instance, you might still be able to save your ROIs, or calculate ROI stability, but this is not desirable. So, if you close the field of view by mistake, please close the app, and run it again using:*** ``defineCellROIs(mouseName,dates,blocks)`` 
 
 <br />
 
