@@ -32,7 +32,7 @@ are all in the same folder.
 <img width="200" height="400" src="https://github.com/ucsb-goard-lab/defineCellROIs/blob/fb96255e84074e7b3171b2096f37065a1df15163/screenShots/GUIimage.png">
 </p>
 
-***Warning: closing the field of view window by clicking on the 'x' at the top right corner results in a number of errors on Matlab's Command Window. This happens because several functions in this app require that field of view window to work properly. The app might still retain limited functionality. For instance, you might still be able to save your ROIs, or calculate ROI stability, but this is not desirable. So, if you close the field of view by mistake, please close the app, and run it again using:*** ``defineCellROIs(mouseName,dates,blocks)`` 
+***Warning: closing the field of view window by clicking on the 'x' at the top right corner results in a number of errors on Matlab's Command Window. This happens because several functions in this app require that field of view window to work properly. The app might still retain limited functionality. For instance, you might still be able to save your ROIs, or calculate ROI stability, but this is not desirable and should be avoided. So, if you close the field of view by mistake, please close the app, and run it again using:*** ``defineCellROIs(mouseName,dates,blocks)`` 
 
 <br />
 
