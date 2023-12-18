@@ -175,7 +175,7 @@ The current version of this app is designed to work with the example experiment 
 <br />
 
 # Example Experiment
-## Data strcuture
+## Data structure
 Each file corresponds to a 15 min block --> 2 blocks per session (day) --> 5 sessions per experiment.
 
 To visualize which fields are contained in each *.mat* file, here is an example from 'sLMF009_180911_1.mat':
