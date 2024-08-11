@@ -4,9 +4,9 @@ GUI for automated detection of cell ROIs from calcium imaging data (with manual 
 This GUI was developed to analyze two-photon calcium imaging data sampled from the same field of view across experimental sessions.
 The GUI also includes code for calculating the stability of ROIs across experimental sessions.
 
-If you find this code helpful, please cite this publication: https://www.biorxiv.org/content/10.1101/2022.10.19.512933v1
+If you find this code helpful, please cite this publication: https://www.nature.com/articles/s41467-024-51227-7
 
-Example two-photon calcium imaging data can be downloaded from here: https://www.mediafire.com/folder/dtoudmlkj7y43/exampleExperiment
+Example two-photon calcium imaging data can be downloaded from here: https://datadryad.org/stash/dataset/doi:10.5061/dryad.7pvmcvf2z
 
 ***Important: this app requires Matlab's Image Processing Toolbox.***
 
